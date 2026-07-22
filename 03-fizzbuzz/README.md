@@ -1,6 +1,6 @@
 # 🧩 Desafio de Lógica: FizzBuzz
 
-Este projeto contém a resolução do clássico desafio de lógica **FizzBuzz**, desenvolvido em **JavaScript (Node.js)** como parte dos meus estudos no programa **Galera Tech**.
+Este projeto contém a resolução do clássico desafio de lógica **FizzBuzz**, desenvolvido em **JavaScript (Node.js)** como parte dos meus estudos no mobile!
 
 ---
 
