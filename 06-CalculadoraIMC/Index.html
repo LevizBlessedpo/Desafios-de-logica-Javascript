@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Site de uma Calculadora IMC</title>
-   <link rel="stylesheet" href=stylev2.css>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+   <link rel="stylesheet" href="style.css">
    <script src = "scriptv2.js" defer></script>
 </head>
 <body>
-  <h1>Calculadora de IMC</h1>
+  <h1 class ="h1i">Calculadora de IMC</h1>
   
 <div class ="Campo1">
     <label for ="Alt">Digite sua altura (ex 1.80):</label>
@@ -21,13 +22,13 @@
 <div class ="Campo2">
     <label for ="Peso">Digite seu peso (ex: 80): </label>
   <div class ="Peso-Container">
-    <input type = "number" id = "Peso" name = "PesoDoUsuário" min = "0" max = "300">
+    <input type = "number" id = "Peso" name = "PesoDoUsuário" step = "0,01" min = "0" max = "300">
     <span>Kg</span>
   </div>
   
 <button type = "button" id ="bt1" name ="BotaoDoResultado">Clique aqui para o resultado!</button>
 
-<p id = "result">O resultado do seu IMC foi:<span id ="NumeroIMC"></span></p>
+<p id = "result"></p>
 </div> 
 </body>
 </html>

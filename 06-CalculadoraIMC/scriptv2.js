@@ -9,13 +9,13 @@ Botao.addEventListener('click', () => {
   const imc = pesoCorrigido / Math.pow(AlturaCorrigida, 2);
   const imcFormatado = imc.toFixed(1);
   if (imc < 18.5) {
-   ResultadoImc.textContent('Atenção você está abaixo do peso recomendado!');
+   ResultadoImc.textContent = `Atençaõ seu IMC foi: ${imcFormatado} e você está abaixo do peso recomendado!`;
 } else if (imc >= 18.5 && imc <= 24.9) {
-   ResultadoImc.textContent('Você está no peso ideal!');
+   ResultadoImc.textContent = `seu IMC foi: ${imcFormatado} e você está no peso ideal parábens!`;
 } else if (imc >= 25.0 && imc <= 29.9) {
-   ResultadoImc.textContent('Atenção você está em sobrepeso! É necessário um acompanhamento constante em seu peso!');
+   ResultadoImc.textContent = `Atenção seu IMC foi: ${imcFormatado} e você está em sobrepeso! É necessário um acompanhamento constante em seu peso!`;
 } else {
-  ResultadoImc.textContent('Atenção! Atençao a sua saúde você está em perigo!');
+  ResultadoImc.textContent = `Atenção seu IMC foi: ${imcFormatado} e a sua saúde está em perigo! Esses são os primeiros sinais de obesidade`;
 }
 });
 
