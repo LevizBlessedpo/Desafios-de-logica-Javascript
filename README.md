@@ -13,6 +13,6 @@ Repositório dedicado ao estudo, consolidação e resolução contínua de desaf
 
 ## 🛠️ Tecnologias e Ferramentas
 - **Linguagem:** JavaScript (Node.js / ES6+)
-- **Editor de Código:** Acode IDE
-- **Terminal CLI:** Termux (Linux environment)
+- **Editor de Código:** VS Code/ Espruino IDE
 - **Controle de Versão:** Git & GitHub
+-**Hiper-marcação de textos e Estilização**: HTML5 e CSS3 
