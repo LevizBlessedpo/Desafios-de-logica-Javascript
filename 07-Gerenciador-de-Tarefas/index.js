@@ -9,7 +9,7 @@ botao.addEventListener('click', () => {
     const id = Date.now();
     const NovaTarefa = new item(id, nomeDaTarefa.value, CategoriaDaTarefa.value, Quantidade.value, false);
     listadeTarefas.push(NovaTarefa);
-    resultado.textContent = NovaTarefa.nomeDaTarefa;
+    resultado.textContent = "As suas tarefas adicionadas foram: " + NovaTarefa.nomeDaTarefa;
 
 });
 
