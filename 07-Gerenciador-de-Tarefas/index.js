@@ -4,9 +4,14 @@ const CategoriaDaTarefa = document.querySelector("#categoriaTarefa");
 const Quantidade = document.querySelector("#quantidadeTarefa");
 const botao = document.querySelector("#BotaoLançarTarefas");
 const resultado = document.querySelector("#listaTarefas");
+const ul = document.querySelector("#Pailista");
+
 
 botao.addEventListener('click', () => {
     const id = Date.now();
+    const paragrafo = document.createElement("p");
+    paragrafo.appendChild(resultado);
+    document.body.appendChild(paragrafo);
     const NovaTarefa = new item(id, nomeDaTarefa.value, CategoriaDaTarefa.value, Quantidade.value, false);
     listadeTarefas.push(NovaTarefa);
     resultado.textContent = "As suas tarefas adicionadas foram: " + NovaTarefa.nomeDaTarefa;
