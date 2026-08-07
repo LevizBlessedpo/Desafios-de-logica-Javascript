@@ -21,14 +21,10 @@ botao.addEventListener('click', () => {
     listadeTarefas.push(NovaTarefa);
 
     function renderizar() {
-        ul.innerHTML = "";
         listadeTarefas.forEach((listadeTarefas) => {
-        resultado.textContent = listadeTarefas;
+        resultado.textContent = "As suas tarefas adicionadas foram: " + listadeTarefas;
     });
     }
-
-    resultado.textContent = "As suas tarefas adicionadas foram: " + NovaTarefa.nomeDaTarefa;
-    resultado.insertAdjacentHTML('afterend', `<p>${NovaTarefa.nomeDaTarefa}</p>`);
     
     return LimparCampos();
     return renderizar();
