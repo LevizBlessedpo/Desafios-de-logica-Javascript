@@ -15,6 +15,7 @@ botao.addEventListener('click', () => {
     const NovaTarefa = new item(id, nomeDaTarefa.value, CategoriaDaTarefa.value, Quantidade.value, false);
     listadeTarefas.push(NovaTarefa);
     resultado.textContent = "As suas tarefas adicionadas foram: " + NovaTarefa.nomeDaTarefa;
+    resultado.insertAdjacentHTML('afterend', `<p>${NovaTarefa.nomeDaTarefa}</p>`);
 
 });
 
