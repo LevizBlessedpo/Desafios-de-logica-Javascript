@@ -6,6 +6,11 @@ const botao = document.querySelector("#BotaoLançarTarefas");
 const resultado = document.querySelector("#listaTarefas");
 const ul = document.querySelector("#Pailista");
 
+function LimparCampos() {
+        nomeDaTarefa.value = "";
+        CategoriaDaTarefa.value = "";
+        Quantidade.value = "";
+    }
 
 botao.addEventListener('click', () => {
     const id = Date.now();
@@ -16,7 +21,8 @@ botao.addEventListener('click', () => {
     listadeTarefas.push(NovaTarefa);
     resultado.textContent = "As suas tarefas adicionadas foram: " + NovaTarefa.nomeDaTarefa;
     resultado.insertAdjacentHTML('afterend', `<p>${NovaTarefa.nomeDaTarefa}</p>`);
-
+    
+    return LimparCampos();
 });
 
 class item {
